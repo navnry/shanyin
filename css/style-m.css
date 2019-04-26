@@ -1,0 +1,214 @@
+.server {
+    background: #e8f3fe;
+    margin-top: 15px;
+}
+
+.server-list {
+    text-align: center;
+    padding: 85px 0 30px 0;
+}
+
+.server-list ul {
+    display: inline-block;
+}
+
+.server-list ul li {
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    padding: 0 60px;
+}
+
+.server-list ul li img {
+    width: 100%;
+    box-shadow: 0 2px 4px 0 rgba(1, 57, 115, 0.3);
+    border-radius: 50%;
+}
+
+.server-list ul li h3 {
+    font-size: 40px;
+    color: #666666;
+    line-height: 40px;
+    margin: 45px 0 25px 0;
+}
+
+.server-list ul li h3:after {
+    content: '';
+    display: block;
+    width: 74px;
+    height: 3px;
+    background-color: #4c8bcb;
+    margin: 20px auto 0 auto;
+}
+
+.server-list ul li p {
+    font-size: 20px;
+    color: #bfbfbf;
+    line-height: 30px;
+}
+
+
+.title {
+    text-align: center;
+    padding: 70px 0;
+}
+
+.title h2 {
+    font-size: 48px;
+    color: #4d4d4d;
+    text-align: center;
+}
+
+.title i {
+    display: inline-block;
+    font-size: 16px;
+    color: #666666;
+    padding: 0 20px 0;
+    margin: 20px 0;
+    line-height: 1px;
+    border-left: 200px solid #ddd;
+    border-right: 200px solid #ddd;
+    text-align: center;
+}
+
+.recommend-item {
+    margin: 10px 0;
+}
+
+.recommend-item img {
+    width: 100%;
+    height: auto;
+}
+
+.teacher {
+    position: relative;
+}
+
+.teacher .swiper-slide img {
+    width: 100%;
+}
+
+.teacher .swiper-container {
+    /*padding: 0 30px;*/
+    margin: 0 20px;
+}
+
+.teacher .swiper-button-next,
+.teacher .swiper-button-prev {
+    outline: none;
+    width: 32px;
+    height: 32px;
+}
+.teacher .swiper-button-prev{
+    left: 0;
+    background: url("../images/bl_03.png")center center /cover no-repeat;
+}
+.teacher .swiper-button-next{
+    right: 0;
+    background: url("../images/br_03.png")center center /cover no-repeat;
+}
+.cooperation {
+    padding-bottom: 110px;
+}
+
+.cooperation .list {
+    text-align: center;
+    font-size: 0;
+}
+
+.cooperation .list ul {
+    display: inline-block;
+}
+
+.cooperation .list ul li {
+    float: left;
+    margin: 0 45px;
+}
+
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+@media screen and (max-width: 992px) {
+    .title {
+        text-align: center;
+        padding: 30px 0;
+    }
+
+    .title h2 {
+        font-size: 24px;
+        color: #4d4d4d;
+        text-align: center;
+    }
+
+    .title i {
+        display: inline-block;
+        font-size: 12px;
+        color: #666666;
+        padding: 0 20px 0;
+        margin: 20px 0;
+        line-height: 1px;
+        border-left: 100px solid #ddd;
+        border-right: 100px solid #ddd;
+        text-align: center;
+    }
+
+
+
+
+    .server-list {
+        padding-top: 30px;
+    }
+
+    .server-list ul li {
+        padding: 0 10px;
+    }
+
+    .server-list ul li img {
+
+
+    }
+
+    .server-list ul li h3 {
+        font-size: 18px;
+        color: #666666;
+        line-height: 30px;
+        margin: 10px 0 10px 0;
+    }
+
+    .server-list ul li h3:after {
+        content: '';
+        display: block;
+        width: 74px;
+        height: 3px;
+        background-color: #4c8bcb;
+        margin: 5px auto 0 auto;
+    }
+
+    .server-list ul li p {
+        font-size: 14px;
+        color: #bfbfbf;
+        line-height: normal;
+    }
+    .teacher .swiper-container {
+        /*padding: 0 30px;*/
+        margin: 0;
+    }
+
+
+    .cooperation .list ul li{
+        margin: 0;
+    }
+}
