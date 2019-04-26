@@ -11,6 +11,9 @@ ul:after {
     clear: both;
 }
 
+body{
+    background: #e8f3fe;
+}
 /*====================导航*********/
 .header {
     width: 100%;

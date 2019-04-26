@@ -99,14 +99,17 @@
     width: 32px;
     height: 32px;
 }
-.teacher .swiper-button-prev{
+
+.teacher .swiper-button-prev {
     left: 0;
-    background: url("../images/bl_03.png")center center /cover no-repeat;
+    background: url("../images/bl_03.png") center center /cover no-repeat;
 }
-.teacher .swiper-button-next{
+
+.teacher .swiper-button-next {
     right: 0;
-    background: url("../images/br_03.png")center center /cover no-repeat;
+    background: url("../images/br_03.png") center center /cover no-repeat;
 }
+
 .cooperation {
     padding-bottom: 110px;
 }
@@ -123,8 +126,84 @@
 .cooperation .list ul li {
     float: left;
     margin: 0 45px;
+
 }
 
+.news-list ul li {
+    padding: 30px 0;
+    border-bottom: dashed 1px #999999;
+}
+
+.news-list .left {
+    display: block;
+    padding-left: 0;
+}
+
+.news-list .left img {
+    width: 100%;
+}
+
+.news-list .right h4 {
+    font-size: 20px;
+    line-height: 40px;
+    color: #666666;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.news-list .right span {
+    font-size: 16px;
+    color: #999999;
+    display: block;
+    padding-bottom: 7px;
+}
+
+.news-list .right p {
+    font-size: 16px;
+    color: #999999;
+}
+
+.news-list .fenye {
+    text-align: right;
+    font-size: 0;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.news-list .fenye > div {
+    display: inline-block;
+}
+
+.news-list .fenye a {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    border: 1px solid #9da098;
+    float: left;
+    font-size: 12px;
+    color: #999999;
+    text-align: center;
+    line-height: 20px;
+    margin: 0 5px;
+}
+
+.news-list .fenye a.on {
+    background: #266cb4;
+    border-color: #266cb4;
+    color: #ffffff;
+}
+
+.news-list .fenye .prev,
+.news-list .fenye .next {
+    width: 44px;
+}
+
+.news .container{
+    background: #ffffff;
+    margin: 25px auto;
+    padding: 0 40px;
+}
 /**/
 /**/
 /**/
@@ -166,8 +245,6 @@
     }
 
 
-
-
     .server-list {
         padding-top: 30px;
     }
@@ -202,13 +279,37 @@
         color: #bfbfbf;
         line-height: normal;
     }
+
     .teacher .swiper-container {
         /*padding: 0 30px;*/
         margin: 0;
     }
 
 
-    .cooperation .list ul li{
+    .cooperation .list ul li {
         margin: 0;
+    }
+    .news-list .left {
+        display: block;
+        padding: 0;
+    }
+
+    .news-list .right{
+        padding: 0;
+    }
+    .news-list .right h4{
+        font-size: 18px;
+    }
+    .news-list .right span{
+        font-size: 14px;
+    }
+    .news-list .right p {
+        font-size: 14px;
+        color: #999999;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
     }
 }
