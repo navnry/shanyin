@@ -88,6 +88,9 @@ body{
     font-size: 16px;
     line-height: 80px;
 }
+.navbar{
+    position: relative;
+}
 
 .header .navbar_nav li:hover a {
     color: #266cb4;

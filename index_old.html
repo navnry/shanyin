@@ -155,61 +155,19 @@
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="pic" style="background: url(images/ttt.png) center center /cover no-repeat"></div>
-                        <div class="con">
-                            <div class="con-wrapper">
-                                <div class="name">李老师</div>
-                                <div class="work">岳麓一小特级教师</div>
-                                <div class="his">
-                                    教育界的新型人才<br>
-                                    擅长语数外教育界的新型人才<br>
-                                    擅长语数外教育界的新型人才<br>
-                                    擅长语数外教育界的新型人才<br>
-                                    擅长语数外教育界的新型人才<br>
-                                    擅长语数外
-                                </div>
-                            </div>
-                        </div>
+                        <img src="images/0_05.jpg" alt="">
                     </div>
                     <div class="swiper-slide">
-                        <div class="pic" style="background: url(images/0_05.jpg) top center /cover no-repeat"></div>
-                        <div class="con">
-                            <div class="con-wrapper">
-                                <div class="name">李老师</div>
-                                <div class="work">岳麓一小特级教师</div>
-                                <div class="his">
-                                    教育界的新型人才<br>
-                                    擅长语数外教育界的新型人才<br>
-                                    擅长语数外教育界的新型人才<br>
-                                    擅长语数外教育界的新型人才<br>
-                                    擅长语数外教育界的新型人才<br>
-                                    擅长语数外
-                                </div>
-                            </div>
-                        </div>
+                        <img src="images/0_05.jpg" alt="">
                     </div>
-
                     <div class="swiper-slide">
-                        <div class="pic" style="background: url(images/tex_08.jpg) top center /cover no-repeat"></div>
-                        <div class="con">
-                            <div class="con-wrapper">
-                                <div class="name">李老师</div>
-                                <div class="work">岳麓一小特级教师</div>
-                                <div class="his">
-                                    教育界的新型人才<br>
-                                    <p> 擅长语数外教育界的新型人才
-                                        擅长语数外教育界的新型人才
-                                        擅长语数外教育界的新型人才
-                                        擅长语数外教育界的新型人才
-                                        擅长语数外教育界的新型人才</p>
-                                </div>
-                            </div>
-                        </div>
+                        <img src="images/0_05.jpg" alt="">
                     </div>
                 </div>
+
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next visible-md"></div>
+            <div class="swiper-button-prev visible-md"></div>
         </div>
     </div>
 </div>
@@ -293,48 +251,67 @@
         var banner = new Swiper(".banner .swiper-container", {
             speed: 600,
             loop: true,
-            slideToClickedSlide: true,
             pagination: {
                 el: ".banner .swiper-pagination"
             }
         });
 
-        new Swiper(".teacher .swiper-container", {
-            slidesPerView: "auto",
-            loop: true,
-            effect: "coverflow",
-            centeredSlides: true,
-            // autoplay: {
-            //     delay: 3000,
-            //     disableOnInteraction: false
-            // },
-            slideToClickedSlide: true,
-            speed: 500,
-            touchRatio: 0,
-            navigation: {
-                nextEl: '.teacher .swiper-button-next',
-                prevEl: '.teacher .swiper-button-prev',
-            },
-            coverflowEffect: {
-                rotate: 0,
-                stretch: -30,
-                depth: 300,
-                // modifier: 2,
-                slideShadows: false
-            },
-            breakpoints: {
-                992: {
-                    touchRatio: 1,
-                    coverflowEffect: {
-                        rotate: 0,
-                        stretch: 0,
-                        depth: 300,
-                        // modifier: 2,
-                        slideShadows: false
-                    },
+        var windowWidth = $(window).width();
+        if (windowWidth < 750) {
+            new Swiper(".teacher .swiper-container", {
+                effect: 'coverflow',
+                loop: true,
+                slideToClickedSlide: true,
+                speed: 500,
+                initialSlide: 2,
+                loopAdditionalSlides: 5,
+                centeredSlides: true,
+                slidesPerView: 2.4,
+                // autoplay: {
+                //     delay: 5000,
+                //     disableOnInteraction: false
+                // },
+                coverflowEffect: {
+                    rotate: 0,
+                    stretch: 0,
+                    depth: 150,
+                    modifier: 1,
+                    slideShadows: false,
                 },
-            }
+                navigation: {
+                    nextEl: '.teacher .swiper-button-next',
+                    prevEl: '.teacher .swiper-button-prev',
+                },
+            });
 
-        });
+        }
+        if (windowWidth >= 750) {
+            new Swiper(".teacher .swiper-container", {
+                effect: 'coverflow',
+                loop: true,
+                slideToClickedSlide: true,
+                speed: 500,
+                initialSlide: 1,
+                loopAdditionalSlides: 5,
+                centeredSlides: true,
+                slidesPerView: 3.42,
+                // autoplay: {
+                //     delay: 5000,
+                //     disableOnInteraction: false
+                // },
+                coverflowEffect: {
+                    rotate: 0,
+                    stretch: -50,
+                    depth: 380,
+                    modifier: 1,
+                    slideShadows: false,
+                },
+                navigation: {
+                    nextEl: '.teacher .swiper-button-next',
+                    prevEl: '.teacher .swiper-button-prev',
+                },
+            });
+
+        }
     })
 </script>
